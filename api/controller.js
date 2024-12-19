@@ -24,7 +24,15 @@ let controllers = {
             "https://dummyapi.online/api/products",
           );
           const data = await response.json();
+          console.log(data);
           return data;
+    },
+    hello: async (req, res) => {
+       const response = await fetch("https://dummyapi.online/api/products",);
+       const data = await response.json();
+       res.json(data);
+      
+
     }
 };
 

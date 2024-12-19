@@ -7,5 +7,6 @@ module.exports = function(app) {
        .get(controller.about);
    app.route('/distance/:zipcode1/:zipcode2')
        .get(controller.getDistance);
-  app.route('/hello').get(controller.something);
+  app.route('/hello').get(controller.hello);
+
 };
